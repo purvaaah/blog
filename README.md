@@ -1,0 +1,1 @@
+This is a simple and user-friendly online blog writing platform built using Spring Boot (Spring Initializr). It allows users to create, read, update, and delete blog posts in an organized and efficient way. The project demonstrates core concepts of full-stack web development using Java and Spring Framework.
