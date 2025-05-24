@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 0;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .navbar-brand span {
+      color: #e8491d;
+    }
+    .nav-link {
+      color: #fff !important;
+      margin: 0 15px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background-color: #e8491d;
+      transition: 0.3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .navbar-toggler {
+      border: none;
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+
+      .get{
+        text-align: center;
+        margin-top: 30px;
+        padding: 30px;
+      }
+
+
+      .icon{
+        text-align: center;
+        
+       }
+       .icon i{
+        color: black;
+        margin: 30px;
+        
+
+       }
+       .icon i:hover{
+        color:#e8491d;
+        
+        
+
+       }
+      
+       footer{
+        margin-top: 20px;
+        padding: 15px;
+        background-color: black;
+        color: white;
+        font-size: 10px;
+       }
+
+       .service{
+
+/* height: 500px; */
+margin-top: 70px;
+padding: 15px;
+width: 100%;
+border: 1 px solid black;
+background-image: url(./images/body_bg.jpg);
+background-size: cover;
+
+}
+/* .servicemain p{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+.service h1{
+margin-top: 80px;
+}
+.love{
+margin: 20px;
+padding: 10px;
+text-align: start;
+}
+.love img{
+padding: 10px; 
+}
+.serbtn{
+background-color: transparent;
+padding: 6px 25px;
+border: 1px solid #e93f1a;
+color: #e93f1a;
+text-transform: uppercase;
+}
+
+.fast{
+margin: 20px;
+padding: 10px;
+text-align: end;
+}
+
+
+       @media (min-width: 768px) {
+        
+
+        .get{
+        text-align: center;
+        font-size: 2rem;
+      }
+       }
+
+
+       @media(min-width:992px){
+        
+        .servicemain{
+        justify-content: center;
+        align-items: center;
+        
+      }
+       }
+
+  </style>
+
+
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <div>
+      <img src="./images/logo.png" alt="">
+      <a class="navbar-brand" href=""><span>BlogiFy</span></a>
+    </div>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="./about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="./service.html">SERVICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contact.html">CONTACT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="./login.html">LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Nav End -->
+
+
+
+
+
+<!-- Service -->
+
+<div class="service">
+
+    <h1 class="text-center">At <span class="text-danger fw-bold">Your </span>Service </h1>
+  
+    <service class="servicemain">
+  
+            <div>
+              <div class="one">
+                <div class="love">
+                  <img src="./images/s-1.png"  alt="">
+                  <h2>Written with Love</h2>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content t, </p>
+                  <button class="serbtn">READ MORE</button>
+                </div>
+              </div>
+            
+            
+              <div class="two">
+                <div class="fast">
+                  <img src="./images/s-2.png"  alt="">
+                  <h2> Fast Turnaround </h2>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like </p>       
+                  <button class="serbtn">READ MORE</button>
+                </div>
+              </div>
+            </div>
+  
+  
+  
+            <div>
+              <div class="one">
+                <div class="love">
+                  <img src="./images/s-3.png"  alt="">
+                  <h2> Up to Date </h2>
+                  <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like now use Lorem Ipsum as their default model text, </p>                
+                  <button class="serbtn">READ MORE</button>
+                </div>
+              </div>
+            
+            
+              <div class="two">
+                <div class="fast">
+                  <img src="./images/s-4.png"  alt="">
+                  <h2>Premium Content</h2>
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like </p>
+                  <button class="serbtn">READ MORE</button>
+                </div>
+              </div>
+            </div> 
+  
+    </service>
+  
+    <div class="s2">
+      <div>
+        <h2 class="fw-bold">Get Your Quote Today! </h2>
+        <p> It is a long established fact that a reader will be distracted by the readable content of <br> a page </p>
+      </div>
+      <div>
+        <button class="quote">Get A Quote </button>
+      </div>
+    </div>
+  
+    <!-- Service End -->
+  
+
+
+
+
+
+
+<!-- Footer -->
+
+
+<h1 class="fw-bold get">Contact <span class="text-danger">Us</span></h1>
+
+<div class="icon">
+   <a href=""> <i class="display-5 bi bi-geo-alt-fill"></i></a> 
+   <a href=""> <i class="display-5 bi bi-telephone-fill"></i></a> 
+   <a href=""> <i class="display-5 bi bi-envelope"></i></a> 
+</div>
+
+
+<footer>
+ <h6 class="text-center ">Copyright © 2019 All Rights Reserved By Blogyfy</h6>
+</footer>
+
+
+<!-- Footer End -->
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
